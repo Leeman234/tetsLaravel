@@ -1,0 +1,130 @@
+nav {
+	margin: 27px auto 0;
+	position: relative;
+	width: 215px;
+	height: 50px;
+	background-color: rgb(202, 192, 2);
+	border-radius: 8px;
+	font-size: 0;
+}
+
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+	margin: 40px 0 40px;
+	text-align: center;
+	font-size: 30px;
+	color: #ecf0f1;
+	text-shadow: 2px 2px 4px #000000;
+	font-family: 'Cherry Swash', cursive;
+}
+
+p {
+	position: static;
+	bottom: 20px;
+	width: 100%;
+	text-align: center;
+	color: #ecf0f1;
+	font-family: 'Cherry Swash', cursive;
+	font-size: 40px;
+}
+
+span {
+	color: #2BD6B4;
+}
+
+.form-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	padding: 30px 40px;
+	max-width: 400px;
+	width: 100%;
+	text-align: center;
+}
+
+form label {
+	font-size: 1.2rem;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 10px;
+	display: block;
+}
+
+form select {
+	width: 100%;
+	padding: 10px;
+	font-size: 1rem;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	transition: border-color 0.3s ease;
+}
+
+form select:focus {
+	border-color: #6e8efb;
+	outline: none;
+}
+
+.btn-theme {
+	color: white;
+	padding: 12px 25px;
+	font-size: 1rem;
+	font-weight: bold;
+	border: none;
+	border-radius: 0;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-theme:hover {
+	background: linear-gradient(45deg, #000000, #e01212);
+	transform: scale(1.05);
+}
+
+nav input {
+	display: none;
+}
+
+nav input+label {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	width: 215px;
+	height: 50px;
+	border-radius: 8px;
+	background-color: rgb(0, 192, 26);
+	
+}
+nav input+label:after {
+	content: 'Главгая';
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	width: max-content;
+	height: 47px;
+	border-radius: 8px;
+	background-color: rgb(241, 245, 242);
+	transition: transform 0.3s;
+	font-size: 20px;
+	color: rgb(10, 118, 3);
+	padding: 0 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+}
+
+nav input:checked+label:after {
+	content: 'Контанкты';
+	transform: translateX(83px);
+}

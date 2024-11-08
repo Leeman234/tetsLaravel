@@ -1,0 +1,29 @@
+@import url('../app.css');
+
+body {
+    background: #4aa680;
+}
+
+.form-container {
+    min-height: 60vh;
+    padding: 20px;
+}
+
+form {
+    background: #00ba16;
+}
+.btn-theme {
+    background: linear-gradient(100deg, #ffffff, #000000);
+}
+.btn-theme:hover {
+    background: linear-gradient(100deg, #000000, #ffffff);
+}
+
+nav input+label {
+	background-color: rgb(125, 0, 40);
+	
+}
+nav input+label:after {
+	background-color: rgb(239, 255, 22);
+	color: rgb(0, 0, 0);
+}
